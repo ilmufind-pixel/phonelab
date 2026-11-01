@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>phoneLab — характеристики и цены телефонов, сравнение смартфонов</title>
+<meta name="description" content="phoneLab: каталог смартфонов с характеристиками, ценами в рублях, плюсами и минусами. Сравни два телефона в одной таблице.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#f3f1fb;--sf:#ffffff;--tx:#1a1633;--mu:#6b668a;--ac:#6c4cff;--ac2:#00c2a8;--ln:#e2dff2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0c1c;--sf:#181530;--tx:#f1eeff;--mu:#9a95c0;--ac:#8f78ff;--ac2:#2de2c7;--ln:#2a2650}}
+:root[data-theme="dark"]{--bg:#0e0c1c;--sf:#181530;--tx:#f1eeff;--mu:#9a95c0;--ac:#8f78ff;--ac2:#2de2c7;--ln:#2a2650}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Manrope,system-ui,sans-serif;line-height:1.5}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:Unbounded,sans-serif;font-weight:700;font-size:22px}
+.logo i{font-style:normal;color:var(--ac)}
+.tg{border:1px solid var(--ln);background:var(--sf);color:var(--tx);border-radius:99px;padding:8px 14px;font:600 14px Manrope,sans-serif;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;padding:30px 0 40px}
+h1{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(30px,5.5vw,56px);line-height:1.08;margin:0 0 16px}
+.hero p{color:var(--mu);font-size:18px;max-width:46ch;margin:0 0 22px}
+.btn{display:inline-block;background:var(--ac);color:#fff;border:0;border-radius:14px;padding:14px 22px;font:800 16px Manrope,sans-serif;cursor:pointer;text-decoration:none}
+.vis{display:flex;justify-content:center;gap:14px;align-items:flex-end;height:300px}
+.ph{width:120px;border-radius:26px;border:5px solid var(--tx);background:linear-gradient(160deg,var(--ac),var(--ac2));position:relative}
+.ph:after{content:"";position:absolute;top:8px;left:50%;width:34px;height:8px;margin-left:-17px;border-radius:9px;background:var(--tx)}
+.ph.a{height:250px}.ph.b{height:300px;width:140px;transform:translateY(-6px)}.ph.c{height:220px;background:linear-gradient(200deg,var(--ac2),var(--ac))}
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 22px}
+.bar input{flex:1;min-width:200px;padding:13px 16px;border-radius:14px;border:1px solid var(--ln);background:var(--sf);color:var(--tx);font:600 16px Manrope,sans-serif}
+.chip{border:1px solid var(--ln);background:var(--sf);color:var(--tx);border-radius:99px;padding:11px 16px;font:700 14px Manrope,sans-serif;cursor:pointer}
+.chip.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+h2{font-family:Unbounded,sans-serif;font-size:24px;margin:30px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.th{height:130px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.th{height:170px}.th b i{display:none!important}.th b{width:84px;height:150px;border-radius:18px;border:3px solid rgba(255,255,255,.9);background:rgba(255,255,255,.22);position:relative;box-shadow:0 10px 22px rgba(0,0,0,.28)}.th b i{position:absolute;top:8px;left:8px;display:grid;grid-template-columns:repeat(2,18px);gap:4px;padding:5px;border-radius:12px;background:rgba(0,0,0,.35)}.th b u{width:18px;height:18px;border-radius:50%;background:#0b0b12;border:3px solid #8a8aa0}.th b i.ap{grid-template-columns:repeat(2,18px);grid-auto-rows:18px;gap:5px;padding:6px;border-radius:14px}.th b i.ap.n2{grid-template-columns:18px}.th b i.ap.n3 u:nth-child(1){grid-column:1;grid-row:1}.th b i.ap.n3 u:nth-child(2){grid-column:1;grid-row:2}.th b i.ap.n3 u:nth-child(3){grid-column:2;grid-row:1/3;align-self:center}.th b i.sm,.th b i.nt{display:flex;flex-direction:column;gap:7px;background:none;padding:0;top:12px;left:11px}.th b i.nt u:nth-child(2){margin-left:16px}.th b i.gg{display:flex;justify-content:center;gap:8px;left:-3px;right:-3px;top:24px;padding:6px 0;border-radius:0;background:#15151f}.th b i.rd{left:50%;top:8px;margin-left:-31px;width:62px;height:62px;border-radius:50%;padding:0;gap:4px;justify-content:center;align-content:center;grid-template-columns:repeat(2,18px)}.th b i.rd.n2{grid-template-columns:18px}.th b i.rd.n3 u:nth-child(3){grid-column:1/3;justify-self:center}.th b i.bx{left:50%;top:8px;margin-left:-26px;width:52px;padding:5px;gap:4px;justify-content:center;border-radius:10px;grid-template-columns:repeat(2,18px)}.th b i.bx.n2{grid-template-columns:18px;width:30px;margin-left:-15px}.th b i.bx.n3 u:nth-child(3){grid-column:1/3;justify-self:center}
+.card h3{margin:0;font-size:18px}.br{color:var(--mu);font-size:13px;font-weight:600}
+.sp{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;font-size:13px;margin:0}
+.sp dt{color:var(--mu)}.sp dd{margin:0;font-weight:700;text-align:right}
+.pr{font-family:Unbounded,sans-serif;font-size:18px}.pc{display:flex;flex-direction:column;gap:4px;font-size:13px}.pl{color:#1f9d55;font-weight:700}.mi{color:#d64545;font-weight:700}
+.cmp{display:flex;gap:8px;align-items:center;font-weight:700;font-size:14px;cursor:pointer}
+.cmp input{width:18px;height:18px;accent-color:var(--ac)}
+.tbl{overflow-x:auto;background:var(--sf);border:1px solid var(--ln);border-radius:18px}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--ln);font-size:14px}
+td:first-child{color:var(--mu);font-weight:600}
+.em{color:var(--mu);padding:24px 0}
+footer{color:var(--mu);font-size:13px;padding:40px 0 30px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.vis{height:230px;transform:scale(.8)}}
+:focus-visible{outline:3px solid var(--ac2);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="w">
+<header><div class="logo">phone<i>Lab</i></div><button class="tg" id="tg">Тема</button></header>
+<section class="hero">
+<div>
+<h1>Все характеристики телефонов в одном месте</h1>
+<p>Сравнивай экраны, камеры, батареи и цены. Выбери два телефона — phoneLab покажет разницу в таблице.</p>
+<a class="btn" href="#cat">Смотреть каталог</a>
+</div>
+<div class="vis" aria-hidden="true"><div class="ph a"></div><div class="ph b"></div><div class="ph c"></div></div>
+</section>
+<h2 id="cat">Каталог</h2>
+<div class="bar"><input id="q" type="search" placeholder="Найти телефон, например Pixel" aria-label="Поиск"></div>
+<div class="bar" id="chips"></div>
+<div class="grid" id="grid"></div>
+<h2>Сравнение</h2>
+<div id="cmp"><p class="em">Отметь «Сравнить» у двух телефонов.</p></div>
+<footer>© 2026 phoneLab. Характеристики и цены в рублях примерные (курс около 95 ₽ за доллар), уточняй у производителей.</footer>
+</div>
+<script>
+var P=[
+{n:"iPhone 16 Pro",b:"Apple",s:"6.3\" OLED 120 Гц",c:"A18 Pro",r:"8 ГБ",m:"48 + 48 + 12 Мп",bt:"3582 мА·ч",os:"iOS 18",p:"от 999 $",g:["#7a5cff","#c9b8ff"]},
+{n:"Galaxy S25 Ultra",b:"Samsung",s:"6.9\" AMOLED 120 Гц",c:"Snapdragon 8 Elite",r:"12 ГБ",m:"200 + 50 + 50 + 10 Мп",bt:"5000 мА·ч",os:"Android 15",p:"от 1299 $",g:["#00a6a6","#7ef0d4"]},
+{n:"Pixel 9 Pro",b:"Google",s:"6.3\" LTPO OLED 120 Гц",c:"Tensor G4",r:"16 ГБ",m:"50 + 48 + 48 Мп",bt:"4700 мА·ч",os:"Android 15",p:"от 999 $",g:["#ff6b6b","#ffd36b"]},
+{n:"Xiaomi 15",b:"Xiaomi",s:"6.36\" AMOLED 120 Гц",c:"Snapdragon 8 Elite",r:"12 ГБ",m:"50 + 50 + 50 Мп",bt:"5240 мА·ч",os:"HyperOS 2",p:"от 899 $",g:["#ff8a3d","#ffd1a6"]},
+{n:"OnePlus 13",b:"OnePlus",s:"6.82\" LTPO AMOLED 120 Гц",c:"Snapdragon 8 Elite",r:"12 ГБ",m:"50 + 50 + 50 Мп",bt:"6000 мА·ч",os:"OxygenOS 15",p:"от 899 $",g:["#e5266b","#ff9ec0"]},
+{n:"Nothing Phone (2)",b:"Nothing",s:"6.7\" LTPO OLED 120 Гц",c:"Snapdragon 8+ Gen 1",r:"12 ГБ",m:"50 + 50 Мп",bt:"4700 мА·ч",os:"Nothing OS",p:"от 599 $",g:["#3a3a4a","#b9b9d0"]},
+{n:"iPhone 16",b:"Apple",s:"6.1\" OLED 60 Гц",c:"A18",r:"8 ГБ",m:"48 + 12 Мп",bt:"3561 мА·ч",os:"iOS 18",p:"от 799 $",g:["#3d7bff","#a9c8ff"]},
+{n:"iPhone 15",b:"Apple",s:"6.1\" OLED 60 Гц",c:"A16 Bionic",r:"6 ГБ",m:"48 + 12 Мп",bt:"3349 мА·ч",os:"iOS 17",p:"от 699 $",g:["#f06aa8","#ffc2dd"]},
+{n:"Galaxy S25",b:"Samsung",s:"6.2\" AMOLED 120 Гц",c:"Snapdragon 8 Elite",r:"12 ГБ",m:"50 + 12 + 10 Мп",bt:"4000 мА·ч",os:"Android 15",p:"от 799 $",g:["#2b6cff","#8fe3ff"]},
+{n:"Galaxy Z Fold6",b:"Samsung",s:"7.6\" складной AMOLED",c:"Snapdragon 8 Gen 3",r:"12 ГБ",m:"50 + 12 + 10 Мп",bt:"4400 мА·ч",os:"Android 14",p:"от 1899 $",g:["#222244","#7f86ff"]},
+{n:"Galaxy A56",b:"Samsung",s:"6.7\" AMOLED 120 Гц",c:"Exynos 1580",r:"8 ГБ",m:"50 + 12 + 5 Мп",bt:"5000 мА·ч",os:"Android 15",p:"от 449 $",g:["#25b76b","#c8f5a8"]},
+{n:"Pixel 9",b:"Google",s:"6.3\" OLED 120 Гц",c:"Tensor G4",r:"12 ГБ",m:"50 + 48 Мп",bt:"4700 мА·ч",os:"Android 15",p:"от 799 $",g:["#ff9a3d","#ffe08a"]},
+{n:"Pixel 8a",b:"Google",s:"6.1\" OLED 120 Гц",c:"Tensor G3",r:"8 ГБ",m:"64 + 13 Мп",bt:"4492 мА·ч",os:"Android 14",p:"от 499 $",g:["#4fc3f7","#e1f5fe"]},
+{n:"Xiaomi 14T Pro",b:"Xiaomi",s:"6.67\" AMOLED 144 Гц",c:"Dimensity 9300+",r:"12 ГБ",m:"50 + 50 + 12 Мп",bt:"5000 мА·ч",os:"HyperOS",p:"от 649 $",g:["#5b5bd6","#c7c7ff"]},
+{n:"Redmi Note 14 Pro",b:"Xiaomi",s:"6.67\" AMOLED 120 Гц",c:"Helio G100 Ultra",r:"8 ГБ",m:"200 + 8 + 2 Мп",bt:"5500 мА·ч",os:"HyperOS",p:"от 299 $",g:["#ff5a5a","#ffb3b3"]},
+{n:"POCO F7 Pro",b:"POCO",s:"6.67\" AMOLED 120 Гц",c:"Snapdragon 8 Gen 3",r:"12 ГБ",m:"50 + 8 Мп",bt:"6000 мА·ч",os:"HyperOS 2",p:"от 499 $",g:["#ffd400","#fff3a0"]},
+{n:"POCO X7 Pro",b:"POCO",s:"6.67\" AMOLED 120 Гц",c:"Dimensity 8400 Ultra",r:"8 ГБ",m:"50 + 8 Мп",bt:"6000 мА·ч",os:"HyperOS 2",p:"от 329 $",g:["#f2b600","#2b2b2b"]},
+{n:"OnePlus 12",b:"OnePlus",s:"6.82\" LTPO AMOLED 120 Гц",c:"Snapdragon 8 Gen 3",r:"12 ГБ",m:"50 + 48 + 64 Мп",bt:"5400 мА·ч",os:"OxygenOS 14",p:"от 799 $",g:["#1f9d55","#a8f0c6"]},
+{n:"Nothing Phone (3a)",b:"Nothing",s:"6.77\" AMOLED 120 Гц",c:"Snapdragon 7s Gen 3",r:"8 ГБ",m:"50 + 50 + 8 Мп",bt:"5000 мА·ч",os:"Nothing OS 3",p:"от 379 $",g:["#e8e8f0","#9a9ab0"]},
+{n:"Honor Magic7 Pro",b:"Honor",s:"6.8\" LTPO OLED 120 Гц",c:"Snapdragon 8 Elite",r:"12 ГБ",m:"50 + 50 + 200 Мп",bt:"5270 мА·ч",os:"MagicOS 9",p:"от 1099 $",g:["#0b4f6c","#5bc0eb"]},
+{n:"Honor 200",b:"Honor",s:"6.7\" OLED 120 Гц",c:"Snapdragon 7 Gen 3",r:"12 ГБ",m:"50 + 50 + 12 Мп",bt:"5200 мА·ч",os:"MagicOS 8",p:"от 499 $",g:["#7b2ff7","#f107a3"]},
+{n:"Huawei Pura 70 Pro",b:"Huawei",s:"6.8\" LTPO OLED 120 Гц",c:"Kirin 9010",r:"12 ГБ",m:"50 + 12.5 + 48 Мп",bt:"5050 мА·ч",os:"HarmonyOS 4",p:"от 1099 $",g:["#c0392b","#f5b7b1"]},
+{n:"Huawei Mate 60 Pro",b:"Huawei",s:"6.82\" LTPO OLED 120 Гц",c:"Kirin 9000S",r:"12 ГБ",m:"50 + 12 + 48 Мп",bt:"5000 мА·ч",os:"HarmonyOS 4",p:"от 999 $",g:["#1e8449","#abebc6"]},
+{n:"Realme GT 7 Pro",b:"Realme",s:"6.78\" AMOLED 120 Гц",c:"Snapdragon 8 Elite",r:"12 ГБ",m:"50 + 50 + 8 Мп",bt:"6500 мА·ч",os:"Realme UI 6",p:"от 649 $",g:["#ff7a00","#2b2b2b"]},
+{n:"Realme 13 Pro",b:"Realme",s:"6.7\" AMOLED 120 Гц",c:"Snapdragon 7s Gen 2",r:"8 ГБ",m:"50 + 50 Мп",bt:"5200 мА·ч",os:"Realme UI 5",p:"от 349 $",g:["#a3e635","#ecfccb"]},
+{n:"Motorola Edge 50 Pro",b:"Motorola",s:"6.7\" pOLED 144 Гц",c:"Snapdragon 7 Gen 3",r:"12 ГБ",m:"50 + 13 + 10 Мп",bt:"4500 мА·ч",os:"Android 14",p:"от 499 $",g:["#6d28d9","#c4b5fd"]},
+{n:"Moto G85",b:"Motorola",s:"6.67\" pOLED 120 Гц",c:"Snapdragon 6s Gen 3",r:"8 ГБ",m:"50 + 8 Мп",bt:"5000 мА·ч",os:"Android 14",p:"от 249 $",g:["#0ea5e9","#bae6fd"]},
+{n:"Xperia 1 VI",b:"Sony",s:"6.5\" OLED 120 Гц",c:"Snapdragon 8 Gen 3",r:"12 ГБ",m:"48 + 12 + 12 Мп",bt:"5000 мА·ч",os:"Android 14",p:"от 1399 $",g:["#111827","#6b7280"]},
+{n:"Find X8 Pro",b:"Oppo",s:"6.78\" LTPO AMOLED 120 Гц",c:"Dimensity 9400",r:"16 ГБ",m:"50 + 50 + 50 + 50 Мп",bt:"5910 мА·ч",os:"ColorOS 15",p:"от 1099 $",g:["#ec4899","#fbcfe8"]},
+{n:"Reno 12 Pro",b:"Oppo",s:"6.7\" AMOLED 120 Гц",c:"Dimensity 7300",r:"12 ГБ",m:"50 + 50 + 8 Мп",bt:"5000 мА·ч",os:"ColorOS 14",p:"от 449 $",g:["#14b8a6","#99f6e4"]},
+{n:"Vivo X200 Pro",b:"Vivo",s:"6.78\" LTPO AMOLED 120 Гц",c:"Dimensity 9400",r:"16 ГБ",m:"50 + 200 + 50 Мп",bt:"6000 мА·ч",os:"Funtouch 15",p:"от 999 $",g:["#2563eb","#93c5fd"]},
+{n:"Vivo V40",b:"Vivo",s:"6.78\" AMOLED 120 Гц",c:"Snapdragon 7 Gen 3",r:"8 ГБ",m:"50 + 50 Мп",bt:"5500 мА·ч",os:"Funtouch 14",p:"от 399 $",g:["#8b5cf6","#ddd6fe"]},
+{n:"ROG Phone 9 Pro",b:"ASUS",s:"6.78\" AMOLED 185 Гц",c:"Snapdragon 8 Elite",r:"16 ГБ",m:"50 + 13 + 32 Мп",bt:"5800 мА·ч",os:"Android 15",p:"от 1199 $",g:["#dc2626","#1f1f1f"]},
+{n:"Zenfone 11 Ultra",b:"ASUS",s:"6.78\" AMOLED 144 Гц",c:"Snapdragon 8 Gen 3",r:"12 ГБ",m:"50 + 13 + 32 Мп",bt:"5500 мА·ч",os:"Android 14",p:"от 899 $",g:["#0891b2","#a5f3fc"]}
+];
+var PC={'iPhone 16 Pro':'Лучшее видео, долгая поддержка|Дорогой, экран 120 Гц без сюрпризов','Galaxy S25 Ultra':'Отличный экран и зум, стилус S Pen|Тяжёлый и очень дорогой','Pixel 9 Pro':'Умная камера, чистый Android|Греется, зарядка медленная','Xiaomi 15':'Компактный флагман, быстрая зарядка|Много предустановленных приложений','OnePlus 13':'Огромная батарея, очень быстрый|Камера слабее конкурентов','Nothing Phone (2)':'Необычный дизайн, чистая система|Процессор уже не новый','iPhone 16':'Лёгкий, отличная камера|Экран только 60 Гц','iPhone 15':'Дешевле, надёжный|Старый чип, нет кнопки камеры','Galaxy S25':'Компактный, мощный, долгие обновления|Батарея небольшая','Galaxy Z Fold6':'Большой складной экран|Цена и хрупкость','Galaxy A56':'Яркий экран, 6 лет обновлений|Процессор средний','Pixel 9':'Хорошая камера, чистый Android|Только 2 камеры','Pixel 8a':'Недорогая камера Google|Зарядка медленная','Xiaomi 14T Pro':'Экран 144 Гц, быстрая зарядка|Реклама в оболочке','Redmi Note 14 Pro':'Камера 200 Мп за свою цену|Слабый процессор','POCO F7 Pro':'Мощный и недорогой, батарея 6000|Камера обычная','POCO X7 Pro':'Лучший за свои деньги для игр|Пластиковый корпус','OnePlus 12':'Скорость и зарядка 100 Вт|Нет беспроводной зарядки мощнее 50 Вт','Nothing Phone (3a)':'Свой дизайн, чистая система|Камера средняя','Honor Magic7 Pro':'Мощная камера, большая батарея|Обновления короче, чем у Samsung','Honor 200':'Красивые портреты, тонкий|Процессор средний','Huawei Pura 70 Pro':'Топовая камера|Нет сервисов Google','Huawei Mate 60 Pro':'Прочный, спутниковая связь|Нет сервисов Google','Realme GT 7 Pro':'Батарея 6500, мощный и недорогой|Реалми UI с лишним софтом','Realme 13 Pro':'Хорошая камера за цену|Средний процессор','Motorola Edge 50 Pro':'Яркий экран 144 Гц, чистая система|Батарея средняя','Moto G85':'Дёшево, чистый Android|Слабая камера','Xperia 1 VI':'Слот карты памяти, разъём наушников|Очень дорогой','Find X8 Pro':'Камеры и экран высшего уровня|Почти нет в рознице','Reno 12 Pro':'Красивый, хорошие селфи|Не самый быстрый','Vivo X200 Pro':'Лучший зум, огромная батарея|Оболочка Funtouch на любителя','Vivo V40':'Отличные селфи и портреты|Процессор средний','ROG Phone 9 Pro':'Мощь для игр, экран 185 Гц|Тяжёлый и громоздкий','Zenfone 11 Ultra':'Мощный, удобные кнопки|Дорогой, камера средняя'};
+P.forEach(function(x){var d=parseInt(x.p.replace(/\D/g,''),10);x.p='от '+(Math.round(d*95/1000)*1000).toLocaleString('ru-RU')+' ₽';var t=(PC[x.n]||'|').split('|');x.pl=t[0];x.mi=t[1]});
+var F={q:"",b:"Все"},sel=[];
+var $=function(i){return document.getElementById(i)};
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var LC={Apple:'ap',Samsung:'sm',Google:'gg',OnePlus:'rd',Xiaomi:'rd',Huawei:'rd',Honor:'rd',Oppo:'rd',Vivo:'rd',Realme:'rd',Nothing:'nt',POCO:'bx',Motorola:'sm',Sony:'sm',ASUS:'bx'};
+function lc(x){return(LC[x.b]||'bx')+' n'+Math.min(4,x.m.split('+').length)}
+function lens(x){var n=Math.min(4,x.m.split("+").length),s="";for(var k=0;k<n;k++)s+="<u></u>";return s}
+function chips(){var bs=["Все"].concat(P.map(function(x){return x.b}).filter(function(v,i,a){return a.indexOf(v)===i}));$("chips").innerHTML=bs.map(function(b){return '<button class="chip'+(b===F.b?' on':'')+'" data-b="'+b+'">'+b+'</button>'}).join("")}
+function grid(){
+var l=P.filter(function(x){return(F.b==="Все"||x.b===F.b)&&(x.n+x.b).toLowerCase().indexOf(F.q)>-1});
+$("grid").innerHTML=l.length?l.map(function(x){var i=P.indexOf(x);
+return '<article class="card"><div class="th" style="background:linear-gradient(135deg,'+x.g[0]+','+x.g[1]+')"><b><i class="'+lc(x)+'">'+lens(x)+'</i></b></div><div><div class="br">'+x.b+'</div><h3>'+esc(x.n)+'</h3></div><dl class="sp"><dt>Экран</dt><dd>'+esc(x.s)+'</dd><dt>Чип</dt><dd>'+x.c+'</dd><dt>Память</dt><dd>'+x.r+'</dd><dt>Батарея</dt><dd>'+x.bt+'</dd></dl><div class="pc"><span class="pl">+ '+esc(x.pl)+'</span><span class="mi">− '+esc(x.mi)+'</span></div><div class="pr">'+x.p+'</div><label class="cmp"><input type="checkbox" data-i="'+i+'"'+(sel.indexOf(i)>-1?' checked':'')+'> Сравнить</label></article>'}).join(""):'<p class="em">Ничего не найдено. Измени запрос или выбери «Все».</p>'}
+function cmp(){
+if(sel.length<2){$("cmp").innerHTML='<p class="em">Отметь «Сравнить» у двух телефонов.</p>';return}
+var a=P[sel[0]],b=P[sel[1]],rows=[["Экран","s"],["Процессор","c"],["ОЗУ","r"],["Камеры","m"],["Батарея","bt"],["Система","os"],["Цена","p"],["Плюсы","pl"],["Минусы","mi"]];
+$("cmp").innerHTML='<div class="tbl"><table><tr><th></th><th>'+esc(a.n)+'</th><th>'+esc(b.n)+'</th></tr>'+rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+esc(a[r[1]])+'</td><td>'+esc(b[r[1]])+'</td></tr>'}).join("")+'</table></div>'}
+$("q").oninput=function(e){F.q=e.target.value.toLowerCase();grid()};
+$("chips").onclick=function(e){var b=e.target.getAttribute("data-b");if(b){F.b=b;chips();grid()}};
+$("grid").onchange=function(e){var i=+e.target.getAttribute("data-i");
+if(e.target.checked){sel.push(i);if(sel.length>2)sel.shift()}else sel=sel.filter(function(x){return x!==i});grid();cmp()};
+$("tg").onclick=function(){var d=document.documentElement,dark=getComputedStyle(d).getPropertyValue("--bg").trim()==="#0e0c1c";d.setAttribute("data-theme",dark?"light":"dark")};
+chips();grid();
+</script>
+</body>
+</html>
